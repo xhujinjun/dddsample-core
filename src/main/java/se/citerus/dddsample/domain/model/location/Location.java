@@ -4,6 +4,8 @@ import org.apache.commons.lang.Validate;
 import se.citerus.dddsample.domain.shared.Entity;
 
 /**
+ * 地址位置
+ *
  * A location is our model is stops on a journey, such as cargo
  * origin or destination, or carrier movement endpoints.
  *

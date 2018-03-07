@@ -8,6 +8,7 @@ import se.citerus.dddsample.domain.shared.DomainObjectUtils;
 import se.citerus.dddsample.domain.shared.Entity;
 
 /**
+ * 货物 （货物-行程-退-配送-路线）
  * A Cargo. This is the central class in the domain model,
  * and it is the root of the Cargo-Itinerary-Leg-Delivery-RouteSpecification aggregate.
  *
@@ -44,11 +45,25 @@ import se.citerus.dddsample.domain.shared.Entity;
  *
  */
 public class Cargo implements Entity<Cargo> {
-
+  /**
+   * 唯一标识
+   */
   private TrackingId trackingId;
+  /**
+   * 位置
+   */
   private Location origin;
+  /**
+   * 路线说明
+   */
   private RouteSpecification routeSpecification;
+  /**
+   * 行程
+   */
   private Itinerary itinerary;
+  /**
+   * 交付
+   */
   private Delivery delivery;
 
   public Cargo(final TrackingId trackingId, final RouteSpecification routeSpecification) {
